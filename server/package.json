@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Este es el servidor backend de miproyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "express",
+    "javascript",
+    "APIrest"
+  ],
+  "author": "Grupo 07 B29",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  }
+}
