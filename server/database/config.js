@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const dbConnection = async () =>{
-    await mongoose.connect('mongodb://localhost:27017/B29')
+    await mongoose.connect('mongodb://localhost:27017/MiProyecto')
         .then(() => console.log("Connect mongoDB ready"))
         .catch(err => {
             console.log(`Error connect mongoDB: ${ err }`);

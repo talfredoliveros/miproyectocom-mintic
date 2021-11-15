@@ -9,6 +9,7 @@ class Server {
         this.app = express();
         this.port = 3000;
         this.productsPath = '/api/products';
+        this.emprendedorPath = '/api/emprendedor';
 
         this.initDB();
         this.middlewares();
@@ -28,6 +29,7 @@ class Server {
 
     routes(){
         this.app.use(this.productsPath, require('../routes/products'));
+        this.app.use(this.emprendedorPath, require('../routes/emprendedors'));
     }
 
     listen(){
