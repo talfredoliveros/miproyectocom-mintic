@@ -5,21 +5,21 @@ const userSchema = Schema({
         type: String,
         required: [true, '**** Db: El nombre es requerido']
     },
+    password: {
+        type: String,
+        required: [true, '**** Db: La contraseña es requerida']
+    },
+    descripcion: {
+        type: String
+    },
     email: {
         type: String,
         required: [true, '**** Db: El email es requerido'],
         unique: true
     },
-    password: {
-        type: String,
-        required: [true, '**** Db: La contraseña es requerida']
-    },
-    img: {
-        type: String
-    },
     rol: {
         type: String,
-        required: true
+        required: [true, '**** Db: El rol es requerido']
     },
     status: {
         type: Boolean,
